@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SRP\SRP.csproj" />
     <ProjectReference Include="..\OCP\OCP.csproj" />
+    <ProjectReference Include="..\LSP\LSP.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
