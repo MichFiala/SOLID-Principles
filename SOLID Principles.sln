@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP", "SRP\SRP.csproj", "{288F54EA-C8FE-411E-BCF1-D73F1EB74D75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP", "OCP\OCP.csproj", "{4ADC992F-C2A0-4382-8096-FB4577DFF610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{288F54EA-C8FE-411E-BCF1-D73F1EB74D75}.Release|x64.Build.0 = Release|Any CPU
 		{288F54EA-C8FE-411E-BCF1-D73F1EB74D75}.Release|x86.ActiveCfg = Release|Any CPU
 		{288F54EA-C8FE-411E-BCF1-D73F1EB74D75}.Release|x86.Build.0 = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|x64.Build.0 = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Debug|x86.Build.0 = Debug|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|x64.ActiveCfg = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|x64.Build.0 = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|x86.ActiveCfg = Release|Any CPU
+		{4ADC992F-C2A0-4382-8096-FB4577DFF610}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
