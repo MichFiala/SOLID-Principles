@@ -26,3 +26,18 @@ ISP - Interface Segregation Principle
      Identify by interfaces with low cohesion example scan, fax are complete different things
 
      Identify by blank implementations of interface
+
+DIP - Dependency inversion principle
+
+     - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+     - Abstractions should not depend on details. Details should depend on abstractions.
+
+     We can get instance of lower level module using Factory Class | Dependency Injection (Pass class instance into constructor)
+
+     Dependency injection solves as well tight coupling
+     
+     Example: 
+          Class is depend on -> Class 2 
+          Goal is to inverse dependency:
+               We change to Class is depend on -> Interface <- Class2 is depend on Interface

@@ -146,6 +146,7 @@ namespace Application
 
 		static void ISPExample()
 		{
+			Console.WriteLine();
 			// ISP - before
 			ISP.Before.IMultiFunction workCentre = new ISP.Before.WorkCentre();
 			ISP.Before.IMultiFunction printer = new ISP.Before.Printer();
@@ -176,6 +177,24 @@ namespace Application
 			// 2) Our interfaces are now following SRP 
 
 		}
+		static void DIPExample()
+		{
+			// DIP - before
+			DIP.Before.ProductCatalog catalog = new DIP.Before.ProductCatalog();
+			// Calling method that will create instance of SQLProductRepository directly
+			catalog.ListAllProducts();
+			// DIP - after
+			DIP.After.ProductCatalog catalogAfter = new DIP.After.ProductCatalog();
+			// Calling method that will get instance of SQLProductRepository into IProductRepository
+			catalogAfter.ListAllProducts();
+			// Injecting repository instance created by factory
+			DIP.After.IProductRepository repository = DIP.After.ProductFactory.Create();
+			// DIP - after injection
+			DIP.After.ProductCatalog catalogAfterInjected = new DIP.After.ProductCatalog(repository);
+			// Calling method that is using injected repository
+			catalogAfterInjected.ListAllProductsRepositoryInjected();
+
+		}
 		static void Main(string[] args)
 		{
 			SRPExample();
@@ -183,6 +202,10 @@ namespace Application
 			OCPExample();
 
 			LSPExample();
+
+			ISPExample();
+
+			DIPExample();
 
 			Console.ReadLine();
 		}

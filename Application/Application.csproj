@@ -5,6 +5,7 @@
     <ProjectReference Include="..\OCP\OCP.csproj" />
     <ProjectReference Include="..\LSP\LSP.csproj" />
     <ProjectReference Include="..\ISP\ISP.csproj" />
+    <ProjectReference Include="..\DIP\DIP.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
