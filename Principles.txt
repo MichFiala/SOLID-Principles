@@ -1,4 +1,4 @@
-SRP - Single Responsibility principle
+SRP  - Single Responsibility principle
 
      - Cohesion is degree to which the various parts of software component are related
           -> Higher cohesion helps attain better adherence to the Single Responsibility Principle
@@ -7,17 +7,17 @@ SRP - Single Responsibility principle
           -> Loose Coupling helps attain better adherence to the Single Responsibility Principle
      - Every software should have only one reason to change
 
-OCP - Open closed principle
+OCP  - Open closed principle
 
      - Software components should be closed for modification, but open for extension
 
      Often requires decoupling so it automatically follows the SRP
 
-LSP - Liskov Substitution Principle
+LSP  - Liskov Substitution Principle
 
      Objects should be replaceable with their subtypes without affection the correctness of the program
 
-ISP - Interface Segregation Principle
+ISP  - Interface Segregation Principle
 
      - No client should be forced to depend on methods it does not use 
 
@@ -27,7 +27,7 @@ ISP - Interface Segregation Principle
 
      Identify by blank implementations of interface
 
-DIP - Dependency inversion principle
+DIP  - Dependency inversion principle
 
      - High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
@@ -41,3 +41,10 @@ DIP - Dependency inversion principle
           Class is depend on -> Class 2 
           Goal is to inverse dependency:
                We change to Class is depend on -> Interface <- Class2 is depend on Interface
+     
+     IOC  - Inversion of control
+          
+          The injection is happening in main thread in program execution we need to manage the injection manually
+
+          We can fixit using framework to do the injecting automatically in another thread(context)
+               - It looks on depencies of class -> Injects them -> Create the instance of class 
