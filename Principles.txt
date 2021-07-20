@@ -1,0 +1,28 @@
+SRP - Single Responsibility principle
+
+     - Cohesion is degree to which the various parts of software component are related
+          -> Higher cohesion helps attain better adherence to the Single Responsibility Principle
+
+     - Coupling is defined as the level of inter dependency between various software components
+          -> Loose Coupling helps attain better adherence to the Single Responsibility Principle
+     - Every software should have only one reason to change
+
+OCP - Open closed principle
+
+     - Software components should be closed for modification, but open for extension
+
+     Often requires decoupling so it automatically follows the SRP
+
+LSP - Liskov Substitution Principle
+
+     Objects should be replaceable with their subtypes without affection the correctness of the program
+
+ISP - Interface Segregation Principle
+
+     - No client should be forced to depend on methods it does not use 
+
+     Identify by fat interfaces
+
+     Identify by interfaces with low cohesion example scan, fax are complete different things
+
+     Identify by blank implementations of interface

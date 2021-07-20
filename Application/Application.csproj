@@ -4,6 +4,7 @@
     <ProjectReference Include="..\SRP\SRP.csproj" />
     <ProjectReference Include="..\OCP\OCP.csproj" />
     <ProjectReference Include="..\LSP\LSP.csproj" />
+    <ProjectReference Include="..\ISP\ISP.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

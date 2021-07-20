@@ -143,6 +143,39 @@ namespace Application
 				Console.WriteLine(vehicle.InteriorWidth);
 			}
 		}
+
+		static void ISPExample()
+		{
+			// ISP - before
+			ISP.Before.IMultiFunction workCentre = new ISP.Before.WorkCentre();
+			ISP.Before.IMultiFunction printer = new ISP.Before.Printer();
+			ISP.Before.IMultiFunction scanner = new ISP.Before.Scanner();
+
+			List<ISP.Before.IMultiFunction> devices = new List<ISP.Before.IMultiFunction>()
+			{
+				workCentre, printer, scanner
+			};
+			// It looks like printer can scan, scanner can print etc..
+			foreach(var device in devices)
+			{
+				device.Fax();
+				device.Print();
+				device.Scan();
+			}
+			// ISP - after
+			// -> Work centre can do whatever interfaces we use
+			// -> Printer can only print
+			// -> Scanner can only scan
+			ISP.After.IFax workCentreAfter = new ISP.After.WorkCentre();
+			ISP.After.IPrint printerAfter = new ISP.After.Printer();
+			ISP.After.IScan scannerAfter = new ISP.After.Scanner();
+
+			// 1) We are getting from Liskov substituion principle as well
+			// We can replace IFax only with class implementing IFax and it would work still the same without error
+			// We can replace IPrint only with class implementing IPrint and it would work still the same without error
+			// 2) Our interfaces are now following SRP 
+
+		}
 		static void Main(string[] args)
 		{
 			SRPExample();
